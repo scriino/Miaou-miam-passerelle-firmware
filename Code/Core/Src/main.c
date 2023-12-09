@@ -125,21 +125,21 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 	  /*Allumage de la LED1*/
-	  HAL_GPIO_WritePin(LED1_Pin, LED1_GPIO_Port, GPIO_PIN_SET);
+	  HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_SET);
 	  HAL_Delay(500U);
-	  HAL_GPIO_WritePin(LED1_Pin, LED1_GPIO_Port, GPIO_PIN_RESET);
+	  HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_RESET);
 	  HAL_Delay(500U);
 
 	  /*Allumage de la LED2*/
-	  HAL_GPIO_WritePin(LED2_Pin, LED2_GPIO_Port, GPIO_PIN_SET);
+	  HAL_GPIO_WritePin(LED2_GPIO_Port, LED2_Pin, GPIO_PIN_SET);
 	  HAL_Delay(500U);
-	  HAL_GPIO_WritePin(LED2_Pin, LED2_GPIO_Port, GPIO_PIN_RESET);
+	  HAL_GPIO_WritePin(LED2_GPIO_Port, LED2_Pin, GPIO_PIN_RESET);
 	  HAL_Delay(500U);
 
 	  /*Allumage de la LED3*/
-	  HAL_GPIO_WritePin(LED3_Pin, LED3_GPIO_Port, GPIO_PIN_SET);
+	  HAL_GPIO_WritePin(LED3_GPIO_Port, LED3_Pin, GPIO_PIN_SET);
 	  HAL_Delay(500U);
-	  HAL_GPIO_WritePin(LED3_Pin, LED3_GPIO_Port, GPIO_PIN_RESET);
+	  HAL_GPIO_WritePin(LED3_GPIO_Port, LED3_Pin, GPIO_PIN_RESET);
 	  HAL_Delay(500U);
   }
   /* USER CODE END 3 */
