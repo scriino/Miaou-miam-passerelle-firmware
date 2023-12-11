@@ -72,6 +72,12 @@ void Error_Handler(void);
 #define BT_PARRING_GPIO_Port GPIOD
 #define BLUENRG_NRST_Pin GPIO_PIN_14
 #define BLUENRG_NRST_GPIO_Port GPIOD
+#define LED3_Pin GPIO_PIN_7
+#define LED3_GPIO_Port GPIOB
+#define LED1_Pin GPIO_PIN_8
+#define LED1_GPIO_Port GPIOB
+#define LED2_Pin GPIO_PIN_9
+#define LED2_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 
