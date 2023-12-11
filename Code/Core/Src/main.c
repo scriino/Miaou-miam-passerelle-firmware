@@ -27,6 +27,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "led.h"
 
 /* USER CODE END Includes */
 
@@ -98,13 +99,30 @@ int main(void)
   MX_SPI2_Init();
   MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
-
+  led1Init();
+  led2Init();
+  led3Init();
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+	  for(uint8_t i = 0; i < 100; i++)
+	  {
+		led1SetPWM(i);
+		led2SetPWM(i);
+		led3SetPWM(i);
+		HAL_Delay(10U);
+	  }
+	  for(uint8_t i = 100; i > 0; i--)
+	  {
+		led1SetPWM(i);
+		led2SetPWM(i);
+		led3SetPWM(i);
+		HAL_Delay(10U);
+	  }
+
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
